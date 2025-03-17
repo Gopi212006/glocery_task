@@ -12,7 +12,10 @@ let  container=document.getElementById('grocery-list');
 
 submitBtn.addEventListener('click',(e) =>{
 
+
     e.preventDefault()
+
+     submitBtn.innerText='submit' 
 
     if(values.value.trim()=="")
         {
@@ -76,6 +79,7 @@ localStorage.setItem('items',JSON.stringify(store));
          let singleData=removeData.toString();
          console.log(singleData);
          document.getElementById("grocery").value = singleData
+
     })
 
 
